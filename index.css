@@ -1,0 +1,33 @@
+body{
+    background-image: url("img/blue-background-clipart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "texte image"; 
+  }
+.texte { 
+      grid-area: texte;
+      margin: 50px;
+      margin-top: 300px;
+    
+    
+ }
+.image { 
+      grid-area: image; 
+
+    
+}
+.image1{
+    width: 500px;
+    align-content: center;
+    margin: 50px;
+    margin-top: 250px;
+}
