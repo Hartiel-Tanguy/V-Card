@@ -7,12 +7,23 @@ body{
 .container {
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
+    grid-template-columns: 1.2fr 1.2fr; 
+    grid-template-rows: 0.2fr 2.4fr 0.4fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      "texte image"; 
+    "barre-dessu barre-dessu"
+    "texte image"
+    "barre-dessou barre-dessou";
   }
+.barre-dessu {
+       grid-area: barre-dessu; 
+       font-size: 20px;
+       text-align:right;
+       word-spacing: 2em;
+       font-style: italic;
+
+}
+
 .texte { 
       grid-area: texte;
       margin: 200px;
@@ -25,11 +36,19 @@ body{
 
     
 }
+.barre-dessou { 
+    grid-area: barre-dessou; 
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 2em;
+
+
+}
 .image1{
     width: 500px;
     align-content: center;
     margin: 50px;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 h1{
     color: brown;
@@ -48,3 +67,4 @@ h2{
     color: chartreuse;
     font-size: 25px;
 }
+
